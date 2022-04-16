@@ -2,7 +2,7 @@
 let js = 'amazing';
 console.log(40 + 8 + 23 - 10);
 
-console.log('Jonas'); 
+console.log('Jonas');
 console.log(23);
 
 let firstName = "Matilda";
@@ -79,10 +79,10 @@ console.log(typeof null);
 //     console.log(`Sarah is too young. Wait another ${yearsLeft} years :)`);
 // }
 
-// const birthYear = 1991; 
+// const birthYear = 1991;
 
 // if(birthYear <= 2000) {
-//     let century = 20; 
+//     let century = 20;
 // } else {
 //     let century = 21;
 // }
@@ -97,7 +97,7 @@ console.log(typeof null);
 // console.log(marksWeight + kilograms, marksHeight + meters);
 
 // const johnWeight = 92;
-// const johnHeight = 1.95; 
+// const johnHeight = 1.95;
 // console.log(johnWeight + kilograms, johnHeight + meters);
 
 // const bodyMassWeight = " BMI";
@@ -105,7 +105,7 @@ console.log(typeof null);
 // const johnBMI = johnWeight / johnHeight ** 2;
 // console.log(marksBMI + bodyMassWeight, johnBMI + bodyMassWeight);
 
-// markHigherBMI = marksBMI > johnBMI; 
+// markHigherBMI = marksBMI > johnBMI;
 
 // console.log(markHigherBMI);
 
@@ -132,7 +132,7 @@ console.log(typeof null);
 // console.log('23' / '2');
 
 // let n = '1' + 1;
-// n = n - 1; 
+// n = n - 1;
 // console.log(n);
 
 // console.log(2+4+5+'5');
@@ -157,25 +157,101 @@ console.log(typeof null);
 //     console.log('Height is Undefined');
 // }
 
-const age = '18';
+// const age = '18';
 
-if (age === 18) console.log('You just became an adult :D (strict)');
+// if (age === 18) console.log('You just became an adult :D (strict)');
 
-if (age == 18) console.log('You just became an adult :D (loose)');
+// if (age == 18) console.log('You just became an adult :D (loose)');
 
-const favourite = Number(prompt("What's your favourite number?"));
+// const favourite = Number(prompt("What's your favourite number?"));
 
-console.log(favourite);
-console.log(typeof favourite);
+// console.log(favourite);
+// console.log(typeof favourite);
 
-if (favourite === 23) {
-    console.loog('Cool! 23 is an amazing number!')
-} else if (favourite === 7) {
-    console.log('7 is also a cool number')
-} else if (favourite === 9) {
-    console.log('9 is also a cool number')
+// if (favourite === 23) {
+//     console.loog('Cool! 23 is an amazing number!')
+// } else if (favourite === 7) {
+//     console.log('7 is also a cool number')
+// } else if (favourite === 9) {
+//     console.log('9 is also a cool number')
+// } else {
+//     console.log('Number is not 23 or 7')
+// }
+
+// // if (favourite !== 23) console.log('Why not 23?');
+
+// const hasDriversLicense = true; // A
+// const hasGoodVision = true; // B
+// const isTired = false; // C
+
+// console.log(hasDriversLicense && hasGoodVision);
+// console.log(hasDriversLicense || hasGoodVision);
+// console.log(!hasDriversLicense);
+
+// const shouldDriver = hasDriversLicense && hasGoodVision;
+
+// // if (hasDriversLicense && hasGoodVision) {
+// //     console.log('Sarah is able to drive!')
+// // } else {
+// //     console.log('Someone else should drive...');
+// // }
+
+
+// console.log(hasDriversLicense && hasGoodVision && isTired);
+
+// if (hasDriversLicense && hasGoodVision && !isTired) {
+//     console.log('Sarah is able to drive!')
+// } else {
+//     console.log('Someone else should drive...');
+// }
+
+//                 First part of the Challange 
+
+// ----------------------------------- Task 1 
+
+// teamDolphinsAverageScore = (97 + 112 + 101) / 3;
+// teamKoalasAverageScore = (109 + 95 + 123) / 3;
+
+teamDolphinsAverageScore = (97 + 112 + 101) / 3;
+teamKoalasAverageScore = (109 + 95 + 106) / 3;
+
+console.log(teamDolphinsAverageScore, teamKoalasAverageScore);
+
+// ----------------------------------- Task 2 
+
+
+if (teamDolphinsAverageScore > teamKoalasAverageScore) {
+    console.log(`Team Dolphins Average Score (${teamDolphinsAverageScore}) is higher then average score of the team Koalas (${teamKoalasAverageScore})`);
+} else if (teamDolphinsAverageScore < teamKoalasAverageScore) {
+    console.log(`Team Koalas Average Score (${teamKoalasAverageScore}) is higher then average score of the team Koalas (${teamDolphinsAverageScore})`);
 } else {
-    console.log('Number is not 23 or 7')
+    console.log('The result is equal there is no winner!');
 }
 
-if (favourite !== 23) console.log('Why not 23?');
+// ----------------------------------- Bonus 1
+
+if (teamDolphinsAverageScore > teamKoalasAverageScore && teamDolphinsAverageScore >= 100) {
+    console.log(`Team Dolphins Average Score (${teamDolphinsAverageScore}) is higher then average score of the team Koalas (${teamKoalasAverageScore})`);
+} else if (teamDolphinsAverageScore < teamKoalasAverageScore && teamKoalasAverageScore >= 100) {
+    console.log(`Team Koalas Average Score (${teamKoalasAverageScore}) is higher then average score of the team Koalas (${teamDolphinsAverageScore})`);
+} else {
+    console.log('The result is equal there is no winner!');
+}
+
+// ----------------------------------- Bonus 2
+
+if (teamDolphinsAverageScore > teamKoalasAverageScore && teamDolphinsAverageScore >= 100) {
+    console.log(`Team Dolphins Average Score (${teamDolphinsAverageScore}) is higher then average score of the team Koalas (${teamKoalasAverageScore})`);
+}
+
+else if (teamDolphinsAverageScore < teamKoalasAverageScore && teamKoalasAverageScore >= 100) {
+    console.log(`Team Koalas Average Score (${teamKoalasAverageScore}) is higher then average score of the team Koalas (${teamDolphinsAverageScore})`);
+}
+
+else if (teamDolphinsAverageScore === teamKoalasAverageScore && teamDolphinsAverageScore >= 100 && teamKoalasAverageScore >= 100) {
+    console.log('The result is equal and above 100 points both teams deserve trophy for their efforts!');
+}
+
+else {
+    console.log('It is a draw but both teams didnt menage to aquire at least 100 points so no one wins a trophy today!');
+}
