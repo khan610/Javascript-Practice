@@ -243,15 +243,12 @@ if (teamDolphinsAverageScore > teamKoalasAverageScore && teamDolphinsAverageScor
 if (teamDolphinsAverageScore > teamKoalasAverageScore && teamDolphinsAverageScore >= 100) {
     console.log(`Team Dolphins Average Score (${teamDolphinsAverageScore}) is higher then average score of the team Koalas (${teamKoalasAverageScore})`);
 }
-
 else if (teamDolphinsAverageScore < teamKoalasAverageScore && teamKoalasAverageScore >= 100) {
     console.log(`Team Koalas Average Score (${teamKoalasAverageScore}) is higher then average score of the team Koalas (${teamDolphinsAverageScore})`);
 }
-
 else if (teamDolphinsAverageScore === teamKoalasAverageScore && teamDolphinsAverageScore >= 100 && teamKoalasAverageScore >= 100) {
     console.log('The result is equal and above 100 points both teams deserve trophy for their efforts!');
 }
-
 else {
     console.log('It is a draw but both teams didnt menage to aquire at least 100 points so no one wins a trophy today!');
 }
